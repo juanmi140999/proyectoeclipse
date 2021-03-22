@@ -10,7 +10,7 @@
     <form action="83parte1.php" method="post">
 		numerador: <input type="decimal" name="numerador" size="10">
 		denominador: <input type="decimal" name="denominador" size="10">
-		<input type="submit" value="Ecuación 1º grado">
+		<input type="submit" value="Simplificar">
 	</form>
     <?php
         $numerador = $_POST["numerador"];
@@ -18,9 +18,9 @@
         $divisor = 2;
         
         while ($divisor<=$numerador && $divisor<=$denominador){
-            while(($numerador%$divisor)==0 && ($numerador%$divisor)==0){
-                $numerador = $numerador / $divisor;
-                $denominador = $denominador / $divisor;
+            while(($numerador % $divisor)==0 && ($denominador % $divisor)==0){
+                $numerador = $numerador/$divisor;
+                $denominador = $denominador/$divisor;
             }
             $divisor++;
         }
