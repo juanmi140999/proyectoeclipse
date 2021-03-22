@@ -7,7 +7,7 @@
     <title>Primer grado</title>
 </head>
 <body>
-    <form action="factorial82.php" method="post">
+    <form action="1grado82.php" method="post">
 		A: <input type="number" name="a" size="10">
 		B: <input type="number" name="b" size="10">
 		<input type="submit" value="Ecuación 1º grado">
